@@ -6,6 +6,7 @@
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
+	<classpathentry kind="src" path="src/main/log"/>
 	<classpathentry kind="src" path="src/main/resources"/>
 	<classpathentry kind="src" output="target/test-classes" path="src/test/java">
 		<attributes>
@@ -31,5 +32,14 @@
 	<classpathentry kind="lib" path="libs/fastjson-1.1.22.jar"/>
 	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.web.container"/>
 	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
+	<classpathentry kind="lib" path="libs/commons-codec-1.9.jar"/>
+	<classpathentry kind="lib" path="libs/commons-logging-1.2.jar"/>
+	<classpathentry kind="lib" path="libs/httpclient-4.5.2.jar"/>
+	<classpathentry kind="lib" path="libs/httpcore-4.4.4.jar"/>
+	<classpathentry kind="lib" path="libs/httpmime-4.5.2.jar"/>
+	<classpathentry kind="lib" path="libs/jackson-annotations-2.5.4.jar"/>
+	<classpathentry kind="lib" path="libs/jackson-core-2.5.4.jar"/>
+	<classpathentry kind="lib" path="libs/jackson-databind-2.5.4.jar"/>
+	<classpathentry kind="lib" path="libs/log4j-1.2.16.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>
