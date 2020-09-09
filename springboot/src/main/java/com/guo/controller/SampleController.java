@@ -17,9 +17,10 @@ public class SampleController {
 	private static Logger logger = Logger.getLogger(SampleController.class);
     @RequestMapping("/home")
     @ResponseBody
-    String home(String body) {
-    	System.out.println(String.valueOf(body));
-        return String.valueOf(body);
+    String home(String jsonBody) {
+    	JSONObject json = JSON.parseObject(jsonBody);
+    	System.out.println(String.valueOf(json));
+        return String.valueOf(json);
     }
 /*    @PostMapping("/abc")
     @ResponseBody 
