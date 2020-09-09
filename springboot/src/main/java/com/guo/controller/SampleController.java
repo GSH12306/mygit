@@ -16,7 +16,7 @@ public class SampleController {
         return String.valueOf(body);
     }
 /*    @PostMapping("/abc")
-    @ResponseBody
+    @ResponseBody 
     public String receivedfee( String body){
     	
     	System.out.println(String.valueOf(body));
