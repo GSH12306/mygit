@@ -20,7 +20,7 @@ public class SampleController {
     String home(String jsonBody) {
     	JSONObject json = JSON.parseObject(jsonBody);
     	System.out.println(String.valueOf(json));
-        return String.valueOf(json);
+        return "已收";
     }
 /*    @PostMapping("/abc")
     @ResponseBody 
