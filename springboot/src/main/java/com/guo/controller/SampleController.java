@@ -2,9 +2,13 @@ package com.guo.controller;
 
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
+import com.alibaba.fastjson.JSONObject;
+import java.io.*;
+import javax.servlet.http.HttpServletRequest;
 @Controller
 @EnableAutoConfiguration
 @RequestMapping("/sample")
@@ -15,4 +19,19 @@ public class SampleController {
     String home() {
         return "Hello World!";
     }
+/*    @PostMapping("/abc")
+    @ResponseBody
+    public String receivedfee( String body){
+    	
+    	System.out.println(String.valueOf(body));
+    	return String.valueOf(body);
+    }*/
+    @ResponseBody
+	@PostMapping("/postID")
+	public Integer getInteger( Integer jsonObject){
+	String a=jsonObject.toString();
+	Integer id=Integer.parseInt(a);
+	return id;
+	}
+    
 }

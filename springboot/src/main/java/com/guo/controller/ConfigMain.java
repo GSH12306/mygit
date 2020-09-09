@@ -8,4 +8,5 @@ public class ConfigMain {
 	public static void main(String[] args) {
 		SpringApplication.run(ConfigMain.class, args);
 	}
+	
 }
