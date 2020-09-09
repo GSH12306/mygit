@@ -3,6 +3,7 @@ package com.guo.controller;
 import org.apache.log4j.Logger;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
@@ -27,7 +28,7 @@ public class SampleController {
     	System.out.println(String.valueOf(body));
     	return String.valueOf(body);
     }*/
-    @RequestMapping("/fee")
+    @PostMapping("/fee")
     @ResponseBody
     public static void onFeeEvent(String jsonBody) {
         // 封装JSON请求
