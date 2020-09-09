@@ -19,6 +19,7 @@ import com.alibaba.fastjson.JSONObject;
  * @discroption 测试post请求参数传递
  */
 @RestController
+@RequestMapping("/IOtest")
 public class TestController {
 	@RequestMapping(value = "/demo",method = RequestMethod.POST)
 	@ResponseBody
