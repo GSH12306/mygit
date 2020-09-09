@@ -11,8 +11,9 @@ public class SampleController {
  
     @RequestMapping("/home")
     @ResponseBody
-    String home() {
-        return "Hello World!";
+    String home(String body) {
+    	System.out.println(String.valueOf(body));
+        return String.valueOf(body);
     }
 /*    @PostMapping("/abc")
     @ResponseBody
