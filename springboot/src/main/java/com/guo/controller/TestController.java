@@ -21,7 +21,7 @@ import com.alibaba.fastjson.JSONObject;
 @RestController
 @RequestMapping("/IOtest")
 public class TestController {
-	@RequestMapping(value = "/demo",method = RequestMethod.POST)
+/*	@RequestMapping(value = "/demo",method = RequestMethod.POST)
 	@ResponseBody
     public String demo(HttpServletRequest req){
         try {
@@ -39,5 +39,11 @@ public class TestController {
             e.printStackTrace();
         }
         return "server response";
-    }
+    }*/
+	  @RequestMapping(value = "/demo",method = RequestMethod.POST)
+	   @ResponseBody
+	   public String demo( String person){
+	       System.out.println(person);
+	       return "server response";
+	   }
 }
