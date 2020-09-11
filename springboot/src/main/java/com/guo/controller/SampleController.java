@@ -1,8 +1,6 @@
 package com.guo.controller;
 
 import org.apache.log4j.Logger;
-import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -16,11 +14,11 @@ import com.alibaba.fastjson.JSONObject;
 @RequestMapping("/sample")
 public class SampleController {
 	private static Logger logger = Logger.getLogger(SampleController.class);
-    @RequestMapping("/home")
-    String home(@RequestBody String jsonBody) {
+    @PostMapping("/home")
+    public String home(@RequestBody String jsonBody) {
     	//JSONObject json = JSON.parseObject(jsonBody);
     	System.out.println(String.valueOf(jsonBody));
-        return "200";
+        return "接收成功";
     }
 /*    @PostMapping("/abc")
     @ResponseBody 
