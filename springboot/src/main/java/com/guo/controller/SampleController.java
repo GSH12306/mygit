@@ -20,6 +20,12 @@ public class SampleController {
     	System.out.println(String.valueOf(jsonBody));
         return "接收成功";
     }
+    @RequestMapping("/hello")
+    @ResponseBody
+    public String web(){
+    	System.out.println("arrive");
+    	return "你好 少年";
+    }
 /*    @PostMapping("/abc")
     @ResponseBody 
     public String receivedfee( String body){
